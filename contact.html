@@ -1,0 +1,93 @@
+<html lang="en">
+
+<head>
+
+    <!-- CS2350 
+    
+    Module 4: Challenge Activity
+    Author: Alon Saar 
+    Date:   3/15/2022
+
+    Filename: contact.html -->
+
+    <meta charset="UTF-8">
+    <meta name="contact me" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+
+        <h1>Contact &nbsp; Information</h1>
+
+        <nav>
+            <ul>
+                <li><a class="navLi" href="index.html">Home</a></li>
+                <li><a class="navLi" href="aboutMe.html">About</a></li>
+                <li> <a class="navLi" href="hobbies.html">My Hobbies</a></li>
+                <li> <a class="navLi" href="resume.html">Resume</a></li>
+                <li> <a class="navLi" href="education.html">Education</a></li>
+                <li id="CSws"> <a class="navLi" href="https://icarus.cs.weber.edu/~as25915/challenge_activities.html"
+                        target="_blank">CS2350
+                        Website</a> </li>
+                <li> <a class="navLi" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <article>
+
+        <h2>Let's talk</h2>
+
+        <p class="contactP2"> Please feel free to reach out to me with any question, comments or ideas that you may
+            have.
+            I am always open for new offers and opportunities! <br> <br></p>
+        <img id="headShot2" src="images/headShot2.jpg" alt="alon picture">
+        <p class="contactP"> Phone: <a href="tel:8088253322">(808) 825-3322</a> <br>
+            Email: <a href="mailto:alonsaar8@gmail.com">alonsaar8@gmail.com</a> <br>
+            P.O Box 129 Hakalau, HI 96710
+        </p>
+
+        <h2>Would you like me to reach out?</h2>
+        <p class="contactP2">If you prefer, leave your contact information and I will reach out to you.</p>
+
+        <form action="https://icarus.cs.weber.edu/~linda/cs2350/submit_pet1.php" method="POST">
+            <fieldset>
+                <legend>Leave Me Your Details</legend>
+                <div>
+                    <label for="nameBox">Name*</label>
+                    <input type="text" id="nameBox" name="custName" placeholder="First and Last Name" required>
+                </div>
+                <div>
+                    <label for="phoneBox">Phone*</label>
+                    <input type="tel" id="phoneBox" name="custPhone" placeholder="(nnn) nnn-nnnn."
+                        pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required>
+                </div>
+                <div>
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" placeholder="XXX@XXXX.." required>
+                </div>
+                <label for="reason">Leave a message:</label> <br>
+                <textarea name="reason" id="reason" cols="60" rows="5" placeholder="As detailed as possible"
+                    required></textarea>
+            </fieldset>
+            <div id="buttons">
+                <input type="submit" id="submit" name="submit" value="Send">
+                <input type="reset" id="reset" name="reset" value="Start Over">
+            </div>
+        </form>
+
+    </article>
+
+    <footer>
+
+        <div class="foot"> ALON SAAR &copy; All Rights Reserved (Last Updated on March 2022)</div>
+
+    </footer>
+
+</body>
+
+</html>
