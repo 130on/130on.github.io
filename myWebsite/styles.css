@@ -16,7 +16,7 @@
 /* Common Style */
 
 html { 
-    background: url(images/CsBackgroundResized.jpg) no-repeat center center fixed; 
+    background: url(myWebsite/images/CsBackgroundResized.jpg) no-repeat center center fixed; 
     background-size: cover;
     padding-left: 2em;
     padding-right: 2em;
