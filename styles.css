@@ -1,0 +1,546 @@
+/* 
+
+    CS2350 
+    
+    Module 4: Challenge Activity
+    Author: Alon Saar 
+    Date:   3/15/2022
+
+    Filename: styles.css 
+
+
+*/
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('fonts/Lobster-Regular.ttf') format('truetype');
+}
+ 
+/* Common Style */
+
+html { 
+    background: url(images/CsBackgroundResized.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 0px;
+    background-color: rgba(250, 243, 234, 0.9);
+}
+
+header {
+    background-color: rgba(96, 140, 146, 0.8);
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+
+footer {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    margin: 0px;
+    font-size: 1.4em;
+    clear: both;
+}
+
+.foot {
+    display: block;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(350deg, rgba(190, 235, 241, 0.774), rgba(28, 50, 56, 0.753) );
+}
+
+/* Navigation Styles */
+
+nav {
+    display: block;
+    font-family: 'cursive';
+}
+
+nav ul{
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    background-color: rgba(33, 53, 58, 0.753);
+    width: 12%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    border: 3px groove rgb(153, 135, 168);
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+}
+
+article {
+    display: block;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+
+#CSws {
+    width:17%;
+}
+
+/* Link Styles */
+
+nav a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color: black;
+}
+
+.navLi:link {
+    color: white;
+}
+
+.navLi:visited {
+    color: rgb(203, 167, 236);
+}
+
+.navLi:hover {
+    color: rgb(207, 79, 79);
+}
+
+.navLi:active {
+    color:blue;
+}
+
+li a:link {
+    color:rgb(62, 132, 238);
+}
+
+li a:visited {
+    color:rgb(186, 162, 206);
+}
+
+li a:hover {
+    color:rgb(255, 0, 0);
+}
+
+li a:active {
+    color:rgb(14, 14, 73);
+}
+
+h4 a:link {
+    color:rgb(18, 64, 150);
+}
+
+h4 a:visited {
+    color:rgb(165, 112, 206);
+}
+
+h4 a:hover {
+    color:rgb(241, 8, 8);
+}
+
+h4 a:active {
+    color:rgb(20, 162, 206);
+}
+
+#achievements > a:link{
+    color: rgb(18, 64, 150);
+}
+
+#achievements > a:hover{
+    color: rgb(241, 8, 8);
+}
+
+#achievements > a:active{
+    color:rgb(20, 162, 206);
+}
+
+/* font Styles */
+
+nav > ul > li > a{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-family:'Lobster', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Heading Styles */
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color:rgb(47, 54, 54)
+}
+
+h2 {
+    clear: both;
+    font-size: 3em;
+    text-align: center;
+    color:rgb(0, 35, 68);
+    padding: 0.2em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h4 {
+    clear: both;
+    font-size: 2.5em;
+    color:rgba(9, 41, 71);
+    margin: 0.1em;
+    padding: 0.1em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.h4Edu a {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.8em;    
+}
+/* List Styles */
+
+.resume{
+    font-size: 1.3em;
+    line-height: 1.5em;
+    background: url(images/background6.jpg);
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px ridge;
+    border-radius: 5px;
+    line-height: 1.7em;
+}
+
+#cert {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+#achievements {
+    font-size: 1.5em;
+}
+
+#achievements > a{
+    color: black;
+}
+
+/* Section/Article Styles */
+
+article {
+    padding-top: 15px;
+}
+
+#index {
+    font-size: 1.5em;
+    padding: 25px;
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.about {
+    background-color: rgba(255, 255, 255, 55%);
+    border: 1px onset black;
+    border-style: outset;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.2em;
+    clear:both;
+    line-height: 1.5em;
+}
+
+#cover {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-size: 1.2em;
+    padding: 15px;
+}
+
+#files {
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+#childhood {
+    display: block;
+    float: left;
+    width: 60%;
+}
+
+#uni {
+    display: block;
+    float: right;
+    clear: both;
+}
+
+div#famPics {
+    text-align: center;
+    
+}
+
+img#famPics1 {
+    text-align: center;
+    transform: perspective(500px) translateY(-30px) rotateY(40deg) translateX(20px);
+    box-shadow: rgb(95, 94, 94) 10px 10px 50px, rgb(90, 85, 85) -10px -10px 50px;
+}
+
+img#famPics2 {
+    text-align: center;
+    transform: scale(1.2, 1.2);
+    box-shadow: rgb(248, 247, 247) 10px 10px 20px, rgb(207, 203, 203) -10px -10px 20px;
+}
+
+img#famPics3 {
+    text-align: center;
+    transform: perspective(500px) translateY(-30px) rotateY(-40deg) translateX(-30px);
+    box-shadow: rgb(95, 94, 94) 10px 10px 50px, rgb(90, 85, 85) -10px -10px 50px;
+}
+
+#aboutGF {
+    display: block;
+    float: right;
+    width: 65%;
+}
+
+#farm {
+    background-image: url(images/farm3trans.png), url(images/background6.jpg);
+    background-size: cover;
+    display: block;
+    float: left;
+    width: 50%;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    padding: 25px;
+}
+
+.contactP {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    font-size: 1.5em;
+    padding: 20px;
+    margin-right: 40px;
+    margin-bottom: 2em;
+    border: 1px solid black;
+    line-height: 2.5em;
+    width: 70%;
+    display: block;
+    float: right;
+    font-weight: 700;
+}
+
+.contactP2 {
+    font-size: 1.5em;
+}
+
+/* Images Styles */
+
+#idf {
+    display: block;
+    float: left;
+    padding-right: 0.6em;
+    padding-top: 0.1em;
+}
+
+#LLB {
+    clear: both;
+    display: block;
+    float: left;
+    padding-left: 5px;
+    padding-right:35px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+#tau {
+    display: block;
+    float: right;
+}
+
+#wsu {
+    display: block;
+    float: right;
+}
+
+#fam3 {
+    display: block;
+    float:right;
+    border: 20px solid black;
+    margin: 0px;
+}
+
+figcaption {
+    clear: both;
+    display: block;
+    float: right;
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 1.2em;
+    padding: 1.2em;
+}
+
+#wuWei {
+    padding-top: 30px;
+}
+
+.farm2 {
+    display: block;
+    float: right;
+    transform:translateX(-50px) translateY(30px) rotateZ(5deg) ;
+    border: 5px double black;
+    border-radius: 40px;
+}
+
+#van {
+    display: block;
+    float: right;
+    padding: 15px;
+    transform: perspective(500px) translateY(-10px) rotateY(-40deg) translateX(-20px);
+    box-shadow: rgb(95, 94, 94) 10px 10px 50px, rgb(90, 85, 85) -10px -10px 50px;
+}
+
+#headShot2 {
+    display: block;
+    float: left;
+    margin-left: 80px;
+    transform: scale(1.5) translateY(35px);
+    border-radius: 2px;
+    border: 3px ridge rgb(129, 120, 120);
+}
+
+#headShot {
+    display: block;
+    float: right;
+    margin-right: 5em;
+    margin-top: 1.1em;
+    margin-bottom: 1.3em;
+    border-radius: 6px;
+    border: 5px double rgb(84, 116, 111); 
+}
+
+/* Table Styles */
+
+table {
+    width: 100%;
+    line-height: 1.3em;
+    border: 5px solid grey;
+    border-style: inset;
+    padding: 5px;
+    background-color:  rgb(91, 92, 91)
+}
+
+thead {
+    font-size: large;
+    text-align: center;
+    border: 3px solid black;
+    ;
+}
+
+table tr {
+    text-align: center;
+    border: 1.5px solid black;
+}
+
+table th, table td {
+    text-align: center;
+    border: 1.5px solid black;
+}
+
+caption {
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+#year1 {
+    background-color:  rgb(234, 245, 234);
+}
+#year2 {
+    background-color: rgb(199, 207, 199);
+}
+#year3 {
+    background-color:  rgb(157, 163, 157);
+}
+#year4 {
+    background-color:  rgb(150, 151, 150);
+}
+
+.footerRow {
+    background-color: rgb(215, 245, 214);
+    font-size: 1.3em;
+    padding: 5px;
+}
+
+/* Form Styles */
+
+form {
+    padding: 40px;
+} 
+
+fieldset {
+    background-color: rgba(190, 190, 190, 0.7);
+    border-radius: 5px;
+    padding: 30px;
+    font-size: 1.5em;
+}
+
+legend {
+    background-color:  rgba(138, 181, 192, 0.808);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+div {
+    padding: 10px;
+}
+
+#submit:hover {
+    background-color:rgb(102, 238, 23);
+}
+
+#reset:hover {
+    background-color: rgb(55, 100, 224) ;
+}
+
+
+div#buttons {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+div#buttons > input {
+    font-size: 1.5em;
+    padding: 5px;
+    margin-right: 25px;
+    margin-left: 25px;
+    border-radius: 15px;
+}
+
+/* Validation Styles */
+
+#nameBox:focus:valid,
+#phoneBox:focus:valid,
+#email:focus:valid, 
+#reason:focus:valid {
+  background: rgb(220, 255, 220);
+}
+#nameBox:focus:invalid,
+#phoneBox:focus:invalid,
+#email:focus:invalid, 
+#reason:focus:invalid {
+  background: rgb(255, 232, 233);
+}
+
+
