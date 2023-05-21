@@ -177,7 +177,8 @@ h1 {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bolder;
-    color:rgb(47, 54, 54)
+    color:rgb(47, 54, 54);
+    letter-spacing: .2rem;    
 }
 
 h2 {
