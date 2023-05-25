@@ -420,8 +420,8 @@ figcaption {
 #headShot {
     display: block;
     float: right;
-    margin-right: 8em;
-    margin-top: 8em;
+    margin-right: 6em;
+    margin-top: 6em;
     margin-bottom: 1.3em;
     border-radius: 6px;
     border: 5px double rgb(84, 116, 111); 
