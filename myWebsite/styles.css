@@ -162,7 +162,8 @@ nav > ul > li > a{
 }
 
 h1 {
-    font-family:'Lobster', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+    /* font-family:'Lobster', 'Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 footer {
