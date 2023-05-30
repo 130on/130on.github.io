@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Competition Web Form</title>
+    <link rel="stylesheet" href="petStyle.css">
+</head>
+
+
+
+<body>
+
+    <header>
+        <h1>Pet Competition Enrollment Form</h1>
+    </header>
+    <form action="https://icarus.cs.weber.edu/~linda/cs2350/submit_pet1.php" method="POST">
+
+        <fieldset id="petInfo">
+            <legend>Pet Information</legend>
+            <label for="petName">Name</label>
+            <input type="text" id="petName" name="pets name">
+            <label for="bday">Birth Date</label>
+            <input type="text" id="bday" name="pet bday">
+            <br> <br>
+            <div>
+                <label>Pet Type: </label>
+                <label for="cat">Cat</label>
+                <input type="radio" id="cat" name="pet" value="cat">
+                <label for="dog">Dog</label>
+                <input type="radio" id="dog" name="pet" value="dog">
+                <label for="reptile">Reptile</label>
+                <input type="radio" id="reptile" name="pet" value="reptile">
+                <label for="bird">Bird</label>
+                <input type="radio" id="bird" name="pet" value="bird">
+                <label for="rodent">Rodent</label>
+                <input type="radio" id="rodent" name="pet" value="rodent">
+                <br> <br>
+            </div>
+            <label for="bio">Pet Bio</label> <br>
+            <textarea name="petBio" id="bio" cols="30" rows="5"
+                placeholder="Enter a short biography of the pet"></textarea>
+        </fieldset>
+
+        <fieldset id="contact">
+            <legend>Contact Information</legend>
+            <label for="ownerF">First Name*</label>
+            <input type="text" id="ownerF" name="ownerFirst" placeholder="First Name" required>
+            <label for="ownerL">Last Name*</label>
+            <input type="text" id="ownerL" name="ownerLast" placeholder="Last Name" required> <br> <br>
+
+            <label for="tel">Phone Number</label>
+            <input type="tel" name="ownerPhone" id="tel" placeholder="(xxx) xxx-xxxx"
+                pattern="^\d{10}$|^(\s*)?\d{3}[\s-]?\d{4}$" required><br> <br>
+
+            <label for="email">Email*</label>
+            <input type="email" name="ownerEmail" id="email" required>
+        </fieldset>
+
+
+
+        <fieldset id="entry">
+            <legend>Competition Entry</legend>
+            <label>Which competition are you entering?</label><br><br>
+            <label for="singing">Singing pet competition</label>
+            <input type="checkbox" name="singingComp" id="singing"><br><br>
+            <label for="cutest">Cutest pet competition</label>
+            <input type="checkbox" name="cutestComp" id="cutest"><br><br>
+            <label for="tricks">Pet tricks competition</label>
+            <input type="checkbox" name="tricksComps" id="tricks"><br>
+            <div>
+                <label for="tricksL">Select your trick:</label>
+                <select name="tricksList" id="tricksL">
+                    <option value="obstacle course">obstacle course</option>
+                    <option value="frisbee/ball/other catching">frisbee/ball/other catching</option>
+                    <option value="roll over/play dead">roll over/play dead</option>
+                    <option value="other">other</option>
+                </select><br><br>
+            </div>
+            <label for="entName">Name of the Entry</label>
+            <input type="text" name="entryName" id="entName">
+
+
+
+        </fieldset>
+        <fieldset id="board">
+            <legend>Boarding</legend>
+            <label for="daysBrd">How many days of boarding will you need?</label>
+            <input type="number" name="boarding days" id="daysBrd" min="0" max="3"> <br> <br>
+            <label for="sizeRng">Please state the size of your pet kennel [0 - 48 Inches]</label>
+            0
+            <input type="range" id="sizeRng" name="kennelsize" min="0" max="48" step="8">
+            48
+        </fieldset>
+
+        <div id="buttons">
+            <input type="submit" id="submit" name="submit" value="Submit Your Form">
+            <input type="reset" id="reset" name="reset" value="Reset All Fields">
+        </div>
+    </form>
+
+</body>
+
+</html>

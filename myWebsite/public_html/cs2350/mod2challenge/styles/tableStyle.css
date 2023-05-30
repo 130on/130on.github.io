@@ -1,0 +1,82 @@
+/*
+   CS2350
+  2-5 Challenge: Table
+  
+  Author: Alon Saar
+  Date: 2/7/2022
+
+   Filename:         tableStyle.css
+
+*/
+
+/* Table styles */
+ 
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    background-color: rgb(189, 127, 51);
+    border: 5px outset rgb(189, 92, 51);
+    text-transform: uppercase;
+}
+
+table tr {
+    height: 20px;
+}
+
+table th, table td {
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1em;
+    width:12.5%;
+}
+
+/* Table Caption Styles */
+
+caption {
+    caption-side: bottom;
+    text-align: right;
+    padding: 5px;
+    font-size: 1em;
+}
+
+
+ /* Table Header Styles */
+ 
+ thead {
+     background-color: rgb(155, 146, 235);
+ }
+
+
+/* Table Body Styles */ 
+ 
+.work {
+    background-color: rgb(206, 84, 84);
+}
+
+ 
+ /* Table Column Styles */
+ 
+.timeCol {
+    background-color: rgb(224, 168, 14);
+}
+ 
+
+.wDayColumns {
+    background-color: rgb(235, 222, 197) ;
+}
+
+.wEndColumns {
+    background-color: rgb(159, 212, 115);
+}
+ /* Table Footer Styles */
+ 
+
+ .footerRow {
+     background-color: rgb(143, 114, 82);
+ }
