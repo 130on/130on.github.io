@@ -427,6 +427,18 @@ figcaption {
     border: 5px double rgb(84, 116, 111); 
 }
 
+#diplomas {
+    display: block;
+    float: right;
+    width: 75em;
+    height: 75em;
+    margin-right: 6em;
+    margin-top: 6em;
+    margin-bottom: 1.3em;
+    border-radius: 6px;
+    border: 5px double rgb(84, 116, 111); 
+}
+
 /* Table Styles */
 
 table {
