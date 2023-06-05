@@ -437,6 +437,7 @@ figcaption {
     margin-bottom: 1.3em;
     border-radius: 6px;
     border: 5px double rgb(84, 116, 111); 
+    transition: 1s;
 }
 
 /* Table Styles */
