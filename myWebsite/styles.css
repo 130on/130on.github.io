@@ -76,11 +76,6 @@ nav ul li {
     padding-right: 0.1em;
 }
 
-article {
-    display: block;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-}
 
 #CSws {
     width:17%;
@@ -235,7 +230,11 @@ h4 {
 
 /* Section/Article Styles */
 
+
 article {
+    display: block;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
     padding-top: 15px;
 }
 
@@ -427,18 +426,18 @@ figcaption {
     border: 5px double rgb(84, 116, 111); 
 }
 
-#diplomas {
+/* #diplomas {
     display: block;
     float: right;
-    width: 75em;
-    height: 75em;
-    margin-right: 6em;
-    margin-top: 6em;
+    width: 50rem;
+    height: 50rem;
+    margin-right: 4em;
+    margin-top: 4em;
     margin-bottom: 1.3em;
     border-radius: 6px;
     border: 5px double rgb(84, 116, 111); 
     transition: 1s;
-}
+} */
 
 /* Table Styles */
 
@@ -556,3 +555,36 @@ div#buttons > input {
 }
 
 
+/* Media Queries */
+
+@media (max-width: 1600px){
+    object {
+        display: block;
+        float: right; 
+        width: 50rem;
+        height: 40rem;
+        margin-right: 8em;
+        margin-top: 4em; 
+   
+        margin-bottom: 1.3em;
+        border-radius: 6px; 
+  
+        border: 5px double rgb(84, 116, 111); 
+        /* transition: 1s; */
+    }
+}
+
+ @media (min-width: 1600px){
+    object {
+    display: block;
+    float: right;
+    width: 50rem;
+    height: 50rem;
+    margin-right: 18em;
+    margin-top: 4em;
+    margin-bottom: 1.3em;
+    border-radius: 6px;
+    border: 5px double rgb(84, 116, 111); 
+    transition: 1s;
+    }
+} 
