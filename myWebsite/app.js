@@ -17,8 +17,10 @@ Description: script that handles different events in the website
 
 // Alternating display of education diplomas
 
-// var dipSource = ["files/WSU_AAS_CS-AlonSaar2.pdf", "files/2022_2023_Outstanding_Student.pdf", "files/Certificate_of_Proficiency_Programming_Essentials.pdf", "files/AcademicExcellence.jpeg", "files/TLV_LLB_AlonSaar.pdf"];
-// var index = 0;
+var dipSource = ["files/WSU_AAS_CS-AlonSaar2.pdf", "files/2022_2023_Outstanding_Student.pdf", "files/Certificate_of_Proficiency_Programming_Essentials.pdf", "files/AcademicExcellence.jpeg", "files/TLV_LLB_AlonSaar.pdf"];
+var index = 0;
+
+
 
 // const interval = setInterval(() => {
 //     if (index === dipSource.length){
@@ -27,5 +29,16 @@ Description: script that handles different events in the website
     
 //     document.getElementById("diplomas").data = dipSource[index];
 //     index++;
+//     console.log("interval");
 // }, 5000);
+
+
+const pdfObj = document.getElementById("diplomas")
+
+function changePDF() {
+  pdfObj.src = dipSource[index];
+  index = (index + 1) % dipSource.length; // Loop through the array
+}
+
+setInterval(changePDF, 5000); // Change PDF every 5 seconds (adjust as needed)
 
