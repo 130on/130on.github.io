@@ -1,4 +1,3 @@
-/* no_doc_ready */
 "use strict";
 
 /* 
@@ -13,25 +12,11 @@ Description: script that handles different events in the website
 
 
 
-// add a preventfefault for the form
 
 // Alternating display of education diplomas
 
-var dipSource = ["files/WSU_AAS_CS-AlonSaar2.pdf", "files/2022_2023_Outstanding_Student.pdf", "files/Certificate_of_Proficiency_Programming_Essentials.pdf", "files/AcademicExcellence.jpeg", "files/TLV_LLB_AlonSaar.pdf"];
+var dipSource = ["files/WSU_AAS_CS-AlonSaar2.pdf", "files/2022_2023_Outstanding_Student.pdf", "files/Certificate_of_Proficiency_Programming_Essentials.pdf"];
 var index = 0;
-
-
-
-// const interval = setInterval(() => {
-//     if (index === dipSource.length){
-//         index = 0;
-//     }
-    
-//     document.getElementById("diplomas").data = dipSource[index];
-//     index++;
-//     console.log("interval");
-// }, 5000);
-
 
 const pdfObj = document.getElementById("diplomas")
 
