@@ -226,6 +226,36 @@ h4 {
     list-style: none; /* Removes default bullet points */
   }
 
+.projects {
+    display:block;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    background: url(images/background6.jpg);
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px ridge;
+    border-radius: 5px;
+    line-height: 1.7em;
+}
+
+.projects-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content inside each item */
+    text-align: center; /* Centers text below image */
+    width: 300px; /* Adjust width of each item */
+  }
+  
+.projects-item img {
+    width: 100%; /* Ensures images fill the container */
+    max-width: 250px; /* Adjust max size */
+    height: 200px; /* Adjust height */
+    object-fit: cover; /* Ensures images are properly cropped */
+    border-radius: 10px; /* Optional: rounded corners */
+  }
+
 #cert {
     font-size: 1.5em;
     line-height: 1.5em;
