@@ -14,6 +14,31 @@
     <title>Resume</title>
     <link rel="stylesheet" href="styles.css">
 
+
+    <style>
+        #image-container {
+          width: 500px; 
+          height: 300px;
+          position: relative;
+        }
+    
+        img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          opacity: 0;
+          transition: opacity 1s ease-in-out;
+        }
+    
+        .visible {
+          opacity: 1;
+        }
+      </style>
+    
+    
+    
+      
+
 </head>
 
 
@@ -45,8 +70,28 @@
                     <a href="https://ui-timeline.netlify.app/" target="blank"><li><h3>UI Timeline - Web Development</h3></li></a>
                 
                     <li><h3>Algorithm Gauge Application (hosted on WSU server)</h3>
-                        <div id="algoImgContainer">
-                            <iframe id="algoImg" src=""></iframe>
+                        <div>
+                            <div id="image-container">
+                                <img src="files/AlgoGaugeHome.png" class="visible" alt="Image 1">
+                                <img src="files/AlgoGaugeMultiPage.png" alt="Image 2">
+                                <img src="files/AlgoGaugeMultiExperiment.png" alt="Image 3">
+                                <img src="files/AlgoGaugeHistory.png" alt="Image 4">
+                                <img src="files/AlgoGaugeContribution1.png" alt="Image 5">
+                                <img src="files/AlgoGaugeContribution2.png" alt="Image 6">
+                            </div>
+                            
+                              <script>
+                                const images = document.querySelectorAll("#image-container img");
+                                let index = 0;
+                            
+                                function changeImage() {
+                                  images[index].classList.remove("visible"); // Hide current
+                                  index = (index + 1) % images.length; // Move to next
+                                  images[index].classList.add("visible"); // Show new
+                                }
+                            
+                                setInterval(changeImage, 3000);
+                              </script>
                         </div>
                     </li>
 
@@ -64,7 +109,6 @@
 
     </footer>
 
-    <script src="app.js" async></script>
 
 </body>
 
