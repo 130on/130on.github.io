@@ -206,6 +206,9 @@ h4 {
 /* List Styles */
 
 .resume {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust spacing between items */
     font-size: 1.3em;
     line-height: 1.5em;
     background: url(images/background6.jpg);
@@ -217,6 +220,11 @@ h4 {
     border-radius: 5px;
     line-height: 1.7em;
 }
+  
+.resume li {
+    width: calc(33.33% - 20px); /* Three columns */
+    list-style: none; /* Removes default bullet points */
+  }
 
 #cert {
     font-size: 1.5em;
@@ -273,11 +281,6 @@ article {
     padding: 5px;
 }
 
-#childhood {
-    display: block;
-    float: left;
-    width: 60%;
-}
 
 #uni {
     display: block;
@@ -285,28 +288,7 @@ article {
     clear: both;
 }
 
-div#famPics {
-    text-align: center;
 
-}
-
-img#famPics1 {
-    text-align: center;
-    transform: perspective(500px) translateY(-30px) rotateY(40deg) translateX(20px);
-    box-shadow: rgb(95, 94, 94) 10px 10px 50px, rgb(90, 85, 85) -10px -10px 50px;
-}
-
-img#famPics2 {
-    text-align: center;
-    transform: scale(1.2, 1.2);
-    box-shadow: rgb(248, 247, 247) 10px 10px 20px, rgb(207, 203, 203) -10px -10px 20px;
-}
-
-img#famPics3 {
-    text-align: center;
-    transform: perspective(500px) translateY(-30px) rotateY(-40deg) translateX(-30px);
-    box-shadow: rgb(95, 94, 94) 10px 10px 50px, rgb(90, 85, 85) -10px -10px 50px;
-}
 
 #aboutGF {
     display: block;
@@ -346,12 +328,7 @@ img#famPics3 {
 
 /* Images Styles */
 
-#idf {
-    display: block;
-    float: left;
-    padding-right: 0.6em;
-    padding-top: 0.1em;
-}
+
 
 #LLB {
     clear: both;
@@ -373,12 +350,7 @@ img#famPics3 {
     float: right;
 }
 
-#fam3 {
-    display: block;
-    float: right;
-    border: 20px solid black;
-    margin: 0px;
-}
+
 
 figcaption {
     clear: both;
