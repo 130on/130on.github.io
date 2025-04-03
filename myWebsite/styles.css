@@ -224,17 +224,22 @@ h4 {
     flex-wrap: wrap;
     gap: 20px; /* Adjust spacing between items */
     background: url(images/background6.jpg);
-    padding-right: 45px;
-    padding-left: 45px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 45px;
     border: 2px ridge;
     border-radius: 5px;
     line-height: 1.7em;
+    list-style:disc; /* Removes default bullet points */
+    justify-content: space-between; /* Ensures spacing between items */
+    align-items: flex-start; /* Aligns items at the top */
+    padding-left: 5; /* Removes default left padding */
 }
 
 .resumeSkills li {
     width: calc(33.33% - 20px); /* Three columns */
+    text-align: center; /* Centers text */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: subtle background */
+    border-radius: 5px; /* Optional: rounded corners */
 }
 
 .projects {
@@ -268,7 +273,6 @@ h4 {
     opacity: 0;
     transition: opacity 1s ease-in-out;
     object-fit: cover; /* Ensures images are properly cropped */
-    border-radius: 10px; /* Optional: rounded corners */
 }
 
 #image-container img.visible {
