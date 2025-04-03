@@ -241,15 +241,13 @@ h4 {
     line-height: 1.7em;
 }
 
-.projects-item {
+  
+.projects-item img {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers content inside each item */
     text-align: center; /* Centers text below image */
     width: 300px; /* Adjust width of each item */
-  }
-  
-.projects-item img {
     width: 100%; /* Ensures images fill the container */
     max-width: 250px; /* Adjust max size */
     height: 200px; /* Adjust height */
