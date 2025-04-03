@@ -222,7 +222,7 @@ h4 {
 .resumeSkills {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Adjust spacing between items */
+    /* gap: 5px; Adjust spacing between items */
     background: url(images/background6.jpg);
     padding: 20px 45px;
     border: 2px ridge;
@@ -265,7 +265,7 @@ h4 {
 }
 
 #image-container img {
-    width: 80%; /* You can adjust this percentage as needed */
+    width: 100%; /* You can adjust this percentage as needed */
     height: auto;
     opacity: 0;
     transition: opacity 1s ease-in-out;
