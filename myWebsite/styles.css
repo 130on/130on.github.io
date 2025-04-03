@@ -257,28 +257,25 @@ h4 {
 
   
 #image-container {
-    width: 700px; /* Increase width */
-    height: 400px; /* Increase height */
-    position: relative;
-    margin: 0 auto; /* Centers the container */
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the images */
     align-items: center;
+    width: 80%; /* Set a specific width for the container */
+    margin: 0 auto; /* Center the container */
+    overflow: hidden; /* Prevent images from overflowing */
 }
 
 #image-container img {
-    width: 100%; /* Ensures images fill the container */
-    height: 100%; /* Ensures consistent height */
-    position: absolute;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    object-fit: cover; /* Ensures images are properly cropped */
-    border-radius: 0; /* Removes rounded corners */
+    width: 80%; /* Set images to a smaller but larger size than original */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0; /* Start images as invisible */
+    transition: opacity 1s ease-in-out; /* Smooth transition for visibility change */
 }
 
 #image-container img.visible {
-    opacity: 1;
+    opacity: 1; /* Only visible images will have full opacity */
 }
+
 
 #cert {
     font-size: 1.5em;
