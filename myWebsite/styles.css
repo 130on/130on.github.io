@@ -244,7 +244,7 @@ h4 {
 
 .projects {
     font-size: 1.3em;
-    line-height: 1.5em;
+    line-height: 1.7em;  /* Keep only one line-height */
     background: url(images/background6.jpg);
     padding-right: 45px;
     padding-left: 45px;
@@ -252,30 +252,28 @@ h4 {
     padding-bottom: 20px;
     border: 2px ridge;
     border-radius: 5px;
-    line-height: 1.7em;
 }
 
-  
 #image-container {
     display: flex;
-    justify-content: center; /* Center the images */
+    justify-content: center;
     align-items: center;
-    width: 80%; /* Set a specific width for the container */
-    margin: 0 auto; /* Center the container */
-    overflow: hidden; /* Prevent images from overflowing */
+    width: calc(100% - 90px); /* Adjust for padding */
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box; /* Include padding in width */
 }
 
 #image-container img {
-    width: 80%; /* Set images to a smaller but larger size than original */
-    height: auto; /* Maintain aspect ratio */
-    opacity: 0; /* Start images as invisible */
-    transition: opacity 1s ease-in-out; /* Smooth transition for visibility change */
+    width: 80%; /* You can adjust this percentage as needed */
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 #image-container img.visible {
-    opacity: 1; /* Only visible images will have full opacity */
+    opacity: 1;
 }
-
 
 #cert {
     font-size: 1.5em;
