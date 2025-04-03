@@ -258,18 +258,24 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100% - 90px); /* Adjust for padding */
+    width: 80%; /* Control size */
+    height: 300px; /* Fixed height to prevent jumps */
     margin: 0 auto;
     overflow: hidden;
-    box-sizing: border-box; /* Include padding in width */
+    position: relative; /* Anchor images properly */
 }
 
 #image-container img {
-    width: 100%; /* You can adjust this percentage as needed */
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers images properly */
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
+
 
 #image-container img.visible {
     opacity: 1;
