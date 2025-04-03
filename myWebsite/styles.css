@@ -257,8 +257,8 @@ h4 {
 
   
 #image-container {
-    width: 500px; 
-    height: 300px;
+    width: 700px; /* Increase width */
+    height: 400px; /* Increase height */
     position: relative;
     margin: 0 auto; /* Centers the container */
     display: flex;
@@ -273,6 +273,7 @@ h4 {
     opacity: 0;
     transition: opacity 1s ease-in-out;
     object-fit: cover; /* Ensures images are properly cropped */
+    border-radius: 0; /* Removes rounded corners */
 }
 
 #image-container img.visible {
