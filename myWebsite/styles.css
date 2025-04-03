@@ -218,17 +218,20 @@ h4 {
     border-radius: 5px;
     line-height: 1.7em;
 }
-  
+
 .resumeSkills {
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Adjust spacing between items */
-    width: calc(33.33% - 20px); /* Three columns */
+    padding: 0;
     list-style: none; /* Removes default bullet points */
-  }
+}
+
+.resumeSkills li {
+    width: calc(33.33% - 20px); /* Three columns */
+}
 
 .projects {
-    display:block;
     font-size: 1.3em;
     line-height: 1.5em;
     background: url(images/background6.jpg);
@@ -243,13 +246,10 @@ h4 {
 
   
 .projects-item img {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers content inside each item */
-    text-align: center; /* Centers text below image */
-    width: 300px; /* Adjust width of each item */
+    display: block; /* Ensures it behaves like a block element */
+    margin: 0 auto; /* Centers image horizontally */
     width: 100%; /* Ensures images fill the container */
-    max-width: 250px; /* Adjust max size */
+    max-width: 250px; /* Prevents oversized images */
     height: 200px; /* Adjust height */
     object-fit: cover; /* Ensures images are properly cropped */
     border-radius: 10px; /* Optional: rounded corners */
